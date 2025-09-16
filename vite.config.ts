@@ -18,6 +18,14 @@ export default defineConfig(({ mode }) => {
                     name: 'SelectionComponents',
                     fileName: (format) => `index.${format}.js`,
                     formats: ['es', 'cjs', 'umd']
+                },
+                rollupOptions: {
+                    external: ['vue'],
+                    output: {
+                        globals: {
+                            vue: 'Vue'
+                        }
+                    }
                 }
             }
         }

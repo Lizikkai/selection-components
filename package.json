@@ -1,7 +1,12 @@
 {
   "name": "selection-components",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "./dist/selection-components.umd.js",
+  "module": "./dist/selection-components.es.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
